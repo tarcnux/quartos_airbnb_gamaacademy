@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body {
   background-color: deepskyblue;
   color: deeppink;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.quarto {
+	margin: 12px;
+	padding: 8px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+  background-color:deeppink;
+  color: whitesmoke;
+	width: 100%;
+	max-width: 380px;
+	border-radius: 8px;
+	text-align: center;
 }
