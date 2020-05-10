@@ -12,19 +12,26 @@ fetch("https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72")
 		// Utilizar cada item presente da resposta
 		dados.forEach((quarto) => {
 			// Elemento principal
-			var container = document.querySelector(".container");
+			let container = document.querySelector(".container");
 
 			// Nova figure representando um nonvo quarto
-			var figure = document.createElement("figure");
+			let figure = document.createElement("figure");
 			// Definir classe da div
-			figure.className = "quarto";
+      figure.className = "quarto";
+      
+      // Imagem
+      let img = document.createElement("img");
+      img.setAttribute("src", quarto.photo);
+      img.setAttribute("alt", quarto.name)
 
-			// Título da Figure
-			var figcaption = document.createElement("figcaption");
+			// Caption da Figure com o nome do quarto
+			let figcaption = document.createElement("figcaption");
 			// Inserir texto no elemento figcaption
 			figcaption.innerHTML = quarto.name;
 
-			// Inserir texto na figure
+      // Inserir a foto na figure
+      figure.appendChild(img);
+      // Inserir Caption na figure
 			figure.appendChild(figcaption);
 			// Inserir figure no elemento container
 			container.appendChild(figure);

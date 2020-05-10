@@ -25,3 +25,8 @@ body {
 	border-radius: 8px;
 	text-align: center;
 }
+
+.quarto > img {
+  width: 100%;
+  height: auto;
+}
