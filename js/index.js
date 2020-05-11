@@ -27,12 +27,26 @@ fetch("https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72")
 			// Caption da Figure com o nome do quarto
 			let figcaption = document.createElement("figcaption");
 			// Inserir texto no elemento figcaption
-			figcaption.innerHTML = quarto.name;
+      figcaption.innerText = quarto.name;
+      
+      //Tipo de apartamento
+      let tipo = document.createElement("p");
+      tipo.className = "tipo";
+      tipo.innerText = quarto.property_type;
+      
+      // Preço
+      let preco = document.createElement("p");
+      preco.className = "preco";
+      preco.innerText = "R$ " + quarto.price + ",00";
 
       // Inserir a foto na figure
       figure.appendChild(img);
       // Inserir Caption na figure
-			figure.appendChild(figcaption);
+      figure.appendChild(figcaption);
+      //Inserir preço 
+      figure.appendChild(tipo);
+      //Inserir preço 
+      figure.appendChild(preco);
 			// Inserir figure no elemento container
 			container.appendChild(figure);
 		});
