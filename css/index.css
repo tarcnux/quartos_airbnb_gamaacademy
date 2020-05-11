@@ -23,10 +23,35 @@ body {
 	width: 100%;
 	max-width: 380px;
 	border-radius: 8px;
-	text-align: center;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.quarto:hover {
+  box-shadow: 5px 5px 5px darkslategray;
+  transition: 1s;
+  background-color: whitesmoke;
+  color: deeppink;
 }
 
 .quarto > img {
   width: 100%;
   height: auto;
 }
+
+.quarto > .tipo, .quarto > .preco  {
+  
+  background-color:whitesmoke;
+  color: deeppink;
+  border: 2px solid darkslateblue;
+  padding: 5px;
+  border-radius: 3px;
+  object-fit: scale-down;
+  width: max-content;
+}
+
+.quarto > p {
+  margin: 0 auto;
+  margin-top: 10px;;
+}
+
