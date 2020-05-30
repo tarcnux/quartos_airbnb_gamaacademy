@@ -5,7 +5,7 @@ Baunilha Javascript Fetch API
 // Chamada da API
 fetch("https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72")
 	.then((resposta) => {
-		// Salvar e retornar resposta da requisição como Json
+    // Salvar e retornar resposta da requisição como Json    
 		return resposta.json();
 	})
 	.then((dados) => {
